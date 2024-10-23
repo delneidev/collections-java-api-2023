@@ -24,12 +24,10 @@ public class Item {
 		return quant;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "Item{" +
-				"nome='" + nome + '\'' +
-				", preco=" + preco +
-				", quant=" + quant +
-				'}';
+		return String.format("%s: %.2f (Quantidade: %d)", nome, preco, quant);
 	}
 }
